@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Phung Phu Phoi's Projects</title>
+		<title>Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html#projects_section">Phung Phu Phoi's Projects</a></h1>
+						<h1><a href="index.html#projects_section">Evelyn Noelle Nguyen's Projects</a></h1>
 						<nav>
 							<a href="index.html">Return Home</a>
 						</nav>
@@ -44,7 +44,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Title of the Project</h2>
+								<h2>Library Database</h2>
 								<!-- <p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p> -->
 							</div>
 						</header>
@@ -52,11 +52,66 @@
 						<!-- Content -->
 							<div class="wrapper alt style1">
 								<div class="inner">
+								
+									<h3 class="major">Purpose</h3>
+									<p>The purpose of this project was to practice employing modularity and Java IO. By practicing modularity, 
+									I hope to prepare for future projects in which I need to reuse and share code with collaborators. Additionally, becoming more
+									skilled with using Java IO will help me better store, transfer, and manipulate data.</p>
 
 									<h3 class="major">Description</h3>
-									<p>a brief description about why you do this project </p>
-
-									<p>a brief description about this project, input, output and benefits </p>
+									<p>The project's program serves as library database. Four different classes were used in this program. Class LibraryItem served as the 
+									parent class to class Book, class CD, and class DVD. The objects of these classes represented instances of library items
+									and were stored in an ArrayList that represented the library database. In the main file that ran the code, users are given a 
+									menu in which they can choose to search an item, display items of a specific type, display all items, add an item, 
+									import items, and export items. Depending on the menu option the users choose, they will be prompted
+									to enter the item information or file name needed to manipulate the database. 
+									</p>
+									
+									• searchByTitle Method <br>			
+									<p>Method Description: The method prompts the user to enter the name of the item the user wants to search.
+									Using the passed value, the method goes through each object in the ArrayList libraryItems and compares the value of the object's 
+									variable title to the value of the entered item name. If the title and the entered item name are the same, the method prints out the 
+									object. If none of the object's titles match the enterd item name, the method prints that the item is not in the library base. </p>
+									
+									• displayBooks Method <br>
+									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class Book.
+									If the class type is the same as class Book, the method prints out the object. </p>
+									
+									• displayCDs Method <br>
+									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class CD.
+									If the class type is the same as class CD, the method prints out the object. </p>
+									
+									• displayDVDs Method <br>
+									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class DVD.
+									If the class type is the same as class DVD, the method prints out the object. </p>
+									
+									• addNewItem Method <br>
+									<p>Method Description: The method prompts the user to enter what type of item the user wants to add. Depending on the entered item type, the 
+									method prompts the user to enter information about the item and passes it to the class constructor 
+									matching the entered item type. This creates a new object of the entered item type and sets the value of
+									its instance variables to the information passed in the constructor. After the new object is created, it is added to 
+									the ArrayList libraryItems</p>
+									
+									• addWithFile Method <br>
+									<p>Method Description: The method prompts the user to enter the name of the CSV file with which the want to import items. Using Scanner and InputStream, the method
+									reads the CSV file using commas as the delimiter. The first value of each file line specifies the item type and the subsequent values are passed into
+									the constructor of the item type to create a new object. Once the new object is created, the method adds the object to the ArrayList<LibraryItem> libraryItems.
+									This process repeats until there are no more file lines.</p>
+									
+									• exportItemsFile Method <br>
+									<p>Method Description: The method prompts the user to enter the name of the CSV file with which the want to export items. Then, the method goes through each object
+									in the ArrayList<LibraryItem> libraryItems. Using Scanner and OutputStream, the method appends the type of the object (item type) and the value of 
+									its instance variables to a new line in the CSV file. This process repeats until the method goes through all objects in the ArrayList.</p>
+									
+									<h3 class="major">Challenges</h3>
+									<p> 
+									</p>
+									
+									<h3 class="major">Improvements</h3>
+									<p> 
+									</p>
+									
+									
 
 									<h3 class="major">Demo</h3>
 									Attached images or videos for demo
@@ -64,13 +119,14 @@
 									        <!-- <source src="demos/project1_demo.mp4" type="video/mp4"> -->
                                                                                  attached images or video for demo here..if it is images,change the html tag for images
 									</video>
-									<p>Describe the images or video.</p>
+									
+									<!-- <p>Describe the images or video.</p>
 									
 									<video width="100%" height=auto autoplay loop>
 										<!-- <source src="demos/project2_demo2.mp4" type="video/mp4"> -->
                                                                                 attached images or video for demo here..if it is images,change the html tag for images
-									</video>
-									<p>Describe the images or video</p>
+									</video> -->
+									<!-- <p>Describe the images or video</p> -->
 
 									<!-- <section class="features">
 										<article>
