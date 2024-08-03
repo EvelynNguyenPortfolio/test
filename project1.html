@@ -54,54 +54,32 @@
 								<div class="inner">
 								
 									<h3 class="major">Purpose</h3>
-									<p>The purpose of this project was to practice employing modularity and Java IO. By practicing modularity, 
-									I hope to prepare for future projects in which I need to reuse and share code with collaborators. Additionally, becoming more
-									skilled with Java IO will help me better store, transfer, and manipulate data.</p>
+									<p>The purpose of this project was to practice employing modularity and Java IO. Improving these skills will
+									will help me better reuse code and manipulate data.</p>
 
 									<h3 class="major">Description</h3>
-									<p>The project's program serves as library database. Four different classes were used in this program. Class LibraryItem served as the 
-									parent class to class Book, class CD, and class DVD. The objects of these classes represented instances of library items
-									and were stored in an ArrayList that represented the library database. In the main file that ran the code, users are given a 
-									menu in which they can choose to search an item, display items of a specific type, display all items, add an item, 
-									import items, and export items. Depending on the menu option the users choose, they will be prompted
-									to enter the item information or file name needed to manipulate the database. 
+									<p>This project features a library database utilizing four classes: LibraryItems ( parent), Book,  CD, and DVD.  
+									Instances of these classes are stored in an ArrayList, representing the library's inventory. 
+									The main file provides a user menu for searching, displaying, adding, importing, and exporting items. 
 									</p>
 									
+									<h3 class="major">Key Methods</h3>
+									
 									• searchByTitle Method <br>			
-									<p>Method Description: The method prompts users to enter the name of the item they want to search.
-									Using the passed value, the method goes through each object in the ArrayList libraryItems and compares the value of the object's 
-									variable title to the value of the entered item name. If the title and the entered item name are the same, the method prints out the 
-									object. If none of the object's titles match the enterd item name, the method prints that the item is not in the library base. </p>
+									<p>Prompts the user for a title and searches the ArrayList for matches. Prints the item if found, or notifies the user if not </p>
 									
-									• displayBooks Method <br>
-									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class Book.
-									If the class type is the same as class Book, the method prints out the object. </p>
+									• displayBooks Method, displayCDs Method, displayDVDs Method  <br>
+									<p>Each method iterates through the arraylist, printing items matching the specified type (Book, CD, DVD)</p>
 									
-									• displayCDs Method <br>
-									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class CD.
-									If the class type is the same as class CD, the method prints out the object. </p>
-									
-									• displayDVDs Method <br>
-									<p>Method Description: The method goes through each object in the ArrayList libraryItems and checks if its class type is the same as class DVD.
-									If the class type is the same as class DVD, the method prints out the object. </p>
 									
 									• addNewItem Method <br>
-									<p>Method Description: The method prompts users to enter what type of item they want to add. Depending on the entered item type, the 
-									method prompts users to enter information about the item and passes it to the class constructor 
-									matching the entered item type. This creates a new object of the entered item type and sets the value of
-									its instance variables to the information passed in the constructor. After the new object is created, it is added to 
-									the ArrayList libraryItems</p>
+									<p>Prompts the user for item type and data, then creates an as the new item to the ArrayList</p>
 									
 									• addWithFile Method <br>
-									<p>Method Description: The method prompts users to enter the name of the CSV file with which they want to import items. Using Scanner and InputStream, the method
-									reads the CSV file using commas as the delimiter. The first value of each file line specifies the item type and the subsequent values are passed into
-									the constructor of the item type. Once the new object is created, the method adds the object to the ArrayList<LibraryItem> libraryItems.
-									This process repeats until there are no more file lines.</p>
+									<p>Imports items from a specified CSV file, creating and adding items to the ArrayList</p>
 									
 									• exportItemsFile Method <br>
-									<p>Method Description: The method prompts users to enter the name of the CSV file with which they want to export items. Then, the method goes through each object
-									in the ArrayList<LibraryItem> libraryItems. Using Scanner and OutputStream, the method appends the type of the object (item type) and the value of 
-									its instance variables to a new line in the CSV file. This process repeats until the method goes through all objects in the ArrayList.</p>
+									<p>Exports items to a specified CSV file, writing items types and data</p>
 									
 									<h3 class="major">Challenges</h3>
 									<p> One of challenges I faced was properly importing items (objects) from the CSV file. Each object had its own line on which its instance variables were written, and the values
