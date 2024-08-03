@@ -82,12 +82,9 @@
 									<p>Exports items to a specified CSV file, writing items types and data</p>
 									
 									<h3 class="major">Challenges</h3>
-									<p> One of challenges I faced was properly importing items (objects) from the CSV file. Each object had its own line on which its instance variables were written, and the values
-									of its instance variables were deliminated by commas. Unfortunately, problems occurred when the users tried to import more than one object. Becuase I set the values
-									to be deliminated by commas, the addWithFile method believed the last value belonging to previous object included the first value of the next object. The method did not understand that 
-									the two values belonged to seperate objects. It combined the two values and the new line space seperating them (/n) into one String value. I resolved this issue by having the method
-									read and store each CSV file line into a variable before reading the comma deliminated values. This ensured that each object's information was seperate from each other.
-									</p>
+									<p> I faced a challenge importing items from a CSV file where object values were mistakenly combined. 
+									I resolved this by having the method read and store each line separately
+									before processing the comma-delimited values, ensuring each object's information remained distinct.</p>
 									
 									<h3 class="major">Improvements</h3>
 									<p> 
