@@ -56,7 +56,7 @@
 									<h3 class="major">Purpose</h3>
 									<p>The purpose of this project was to practice employing modularity and Java IO. By practicing modularity, 
 									I hope to prepare for future projects in which I need to reuse and share code with collaborators. Additionally, becoming more
-									skilled with using Java IO will help me better store, transfer, and manipulate data.</p>
+									skilled with Java IO will help me better store, transfer, and manipulate data.</p>
 
 									<h3 class="major">Description</h3>
 									<p>The project's program serves as library database. Four different classes were used in this program. Class LibraryItem served as the 
@@ -68,7 +68,7 @@
 									</p>
 									
 									• searchByTitle Method <br>			
-									<p>Method Description: The method prompts the user to enter the name of the item the user wants to search.
+									<p>Method Description: The method prompts users to enter the name of the item they want to search.
 									Using the passed value, the method goes through each object in the ArrayList libraryItems and compares the value of the object's 
 									variable title to the value of the entered item name. If the title and the entered item name are the same, the method prints out the 
 									object. If none of the object's titles match the enterd item name, the method prints that the item is not in the library base. </p>
@@ -86,20 +86,20 @@
 									If the class type is the same as class DVD, the method prints out the object. </p>
 									
 									• addNewItem Method <br>
-									<p>Method Description: The method prompts the user to enter what type of item the user wants to add. Depending on the entered item type, the 
-									method prompts the user to enter information about the item and passes it to the class constructor 
+									<p>Method Description: The method prompts users to enter what type of item they want to add. Depending on the entered item type, the 
+									method prompts users to enter information about the item and passes it to the class constructor 
 									matching the entered item type. This creates a new object of the entered item type and sets the value of
 									its instance variables to the information passed in the constructor. After the new object is created, it is added to 
 									the ArrayList libraryItems</p>
 									
 									• addWithFile Method <br>
-									<p>Method Description: The method prompts the user to enter the name of the CSV file with which the want to import items. Using Scanner and InputStream, the method
+									<p>Method Description: The method prompts users to enter the name of the CSV file with which they want to import items. Using Scanner and InputStream, the method
 									reads the CSV file using commas as the delimiter. The first value of each file line specifies the item type and the subsequent values are passed into
-									the constructor of the item type to create a new object. Once the new object is created, the method adds the object to the ArrayList<LibraryItem> libraryItems.
+									the constructor of the item type. Once the new object is created, the method adds the object to the ArrayList<LibraryItem> libraryItems.
 									This process repeats until there are no more file lines.</p>
 									
 									• exportItemsFile Method <br>
-									<p>Method Description: The method prompts the user to enter the name of the CSV file with which the want to export items. Then, the method goes through each object
+									<p>Method Description: The method prompts users to enter the name of the CSV file with which they want to export items. Then, the method goes through each object
 									in the ArrayList<LibraryItem> libraryItems. Using Scanner and OutputStream, the method appends the type of the object (item type) and the value of 
 									its instance variables to a new line in the CSV file. This process repeats until the method goes through all objects in the ArrayList.</p>
 									
