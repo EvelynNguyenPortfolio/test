@@ -44,7 +44,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Airplane Seat Reservation</h2>
+								<h2>Airplane Seat</h2>
 								<!-- <p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p> -->
 							</div>
 						</header>
@@ -61,6 +61,28 @@
 									<p>This program simulates airplane seat reservation utilizing the class AirplaneSeat. Instances of this class are stored in a 2D array,
 									representing an airplane seat chart. The main file provides users a menu for displaying an airplane's reserved and unreserved seats, 
 									displaying a list of passengers and their seats, searching for a specific passenger and seat, and reserving a seat. </p>
+									
+									<h3 class="major">Key Methods</h3>
+									• seatStatus Method <br>
+									<p>Iterates through 2D array seatName to print the name of the seat and iterates 
+									through 2D array planeSeats to the print availability of the seat
+									</p>
+									
+									• passengerList Method <br>
+									<p>Iterates through 2D array planeSeats and prints the passenger’s information (AirplaneSeat object) if the seat is NOT available
+									</p>
+									
+									• selectSeat Method <br>
+									<p>Prompts user to enter the passenger’s information and reserves the seat if it is available in 2D array planeSeats
+									</p>
+									
+									• findPassenger Method <br>
+									<p>Prompts user to enter a passenger’s name and prints the passenger’s information (AirplaneSeat object) if found after iterating through 2D array planeSeats
+									</p>
+									
+									<h3 class="major">Challenges</h3>
+									<p>Displaying seat statuses in a chart was difficult because seat names were independent of the AirplaneSeat class. I resolved this by storing AirplaneSeat objects 
+									and seat names in separate but identically sized 2D arrays, accessing the same positions when printing the chart.</p>
 
 									
 
